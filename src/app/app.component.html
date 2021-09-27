@@ -1,0 +1,16 @@
+<nav class="navbar navbar-light navbar-expand-lg" style="background-color: #000;">
+  <div class="container">
+    <a routerLink="/" class="navbar-brand text-white fw-bolder" routerLinkActive="active" >TODO</a>
+    
+    <ng-container>
+        <a routerLink = "task" class="btn btn-danger btn-sm rounded-pill px-4">
+        All Tasks
+        </a>
+    </ng-container>
+
+  </div>
+</nav>
+<div class="container">
+  <h4 class="bg-light p-4 rounded">Manage your day by day tasks in this TODO app.</h4>
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,13 @@
+<div class="form row">
+    <div class="mb-3">
+      
+      <!---ngModel directive perform two way data biniding whether we're sending or recieving-->
+      
+      <input type="text" class="form-control form-control-lg" [(ngModel)]="title" placeholder="Type your task here">
+      <input type="date" class="form-control form-control-lg mt-2" [(ngModel)]="created" min="2021-09-27">
+    </div>
+</div>
+
+<button (click)="addTask()"  *ngIf="task.id==0"  class="btn btn btn-danger px-4 rounded-pill float-end">Add</button>
+<button (click)="updateTask()"  *ngIf="task.id!=0" class="btn btn btn-danger px-4 rounded-pill float-end">Update</button>
+
